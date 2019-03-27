@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无敌小拳拳</title>
+<link rel="stylesheet" href="css/navigation.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/hhh.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+<script type="text/javascript" src="js/check.js"></script>
+     <script src = "js/RainLine.js"></script>
+     <script src = "js/WeatherBase.js"></script>
+     <script src = "js/WeatherFlower.js"></script>
+     <script>
+         var w = new WeatherFlower();
+         w.imageList = ["assets/huaban1.png","assets/huaban2.png","assets/huaban3.png"];
+         w.playWeather();
+     </script> 
+
+
+<!--[if lt IE 9]>
+<script>
+document.createElement('video');
+</script>
+<![endif]-->
+
+<script>
+ function blo(){
+	 var process=document.getElementById('process');
+	 process.style.display='block';
+	 var temp=document.getElementById('temp');
+	 temp.style.display='block';
+ }
+ function non(){
+	 var process=document.getElementById('process');
+	 process.style.display='none';
+	 var temp=document.getElementById('temp');
+	 temp.style.display='none';	 
+ }
+ function open(){
+	 var notopen=document.getElementById('notopen');
+	 notopen.style.display='block';
+	 var temp=document.getElementById('temp');
+	 temp.style.display='block';	 	 
+ }
+ function back(){
+	 var notopen=document.getElementById('notopen');
+	 notopen.style.display='none';
+	 var temp=document.getElementById('temp');
+	 temp.style.display='none';	 	 	 	 
+}
+</script>
+<script>
+function hand(){
+ var appointitle=document.getElementById('appointitle');
+ appointitle.style.cursor="pointer";
+}
+</script>
+</head>
+
+<body>  
+<div id="wrap">
+    <div id="temp"></div>
+    <div id="notopen"><img src="images/notopen.png" />
+    <input type="image" src="images/back.png" id="back" style="outline:none;" onclick="back()" />
+    </div>
+    <div id="success">预约成功</div>
+    <div class="block1">   
+        <div class="main">
+             <div class="process" id="process" onmouseover="blo()" onmouseout="non()">
+             <img src="images/appoinimg/BG.png" alt="预约流程" id="appointprocess" />
+             <img src="images/appoinimg/process.png" id="processtitle" />
+             <img src="images/appoinimg/telephone.png" id="telephonepic" />
+             <img src="images/appoinimg/telephone.png" id="telephonepic1" /> 
+             <img src="images/appoinimg/printimg.png" id="piccode" />
+             
+             <form action="https://signup.gzshujuhui.com/signup/wdxqq" method="post" target="hidden_frame">
+             <input type="text" name="phone" id="telephone" style="height:38px;width:480px;border:0px;outline:none;background-color: transparent;" maxlength="11"  placeholder="请输入您的手机号" autocomplete="off" />
+             <input type="text" name="name" id="name" style="height:38px;width:480px;border:0px;outline:none;background-color: transparent;" maxlength="5" placeholder="请输入您的姓名" autocomplete="off" />             
+             <input type="text" id="vcode" placeholder="输入图片验证码" style="height:38px;width:350px;border:0px;outline:none;background-color: transparent;" maxlength="4" autocomplete="off" /><span id="code" title="看不清，换一张"></span>
+             <input type="image" src="images/appoinimg/appoinbtn.png" id="appointbtn" style="outline:none;" onclick="check()" /> 
+             </form>
+             <iframe name="hidden_frame" id="hidden_frame" style="display:none"></iframe>
+             <div id="show"></div>
+             </div>                     
+            <!--<video muted id="loop-video" preload="auto" autoplay="autoplay" loop="loop">
+              <source src="MP4/111.webm" type="video/webm"/>  
+              <source src="MP4/111.mp4" type="video/mp4">
+            </video>-->
+            
+            <div class="logoname"><a href="javascript:;"><img src="images/block1/gamelogo.png" alt="无敌小拳拳" /> </a></div>
+
+            <div class="right">
+             <div class="appointment">
+             <div class="title" id="appointitle" onmouseover="hand()">
+             <img src="images/block1/appoinment.png" alt="马上预约" onclick="blo()" style="margin:0 10px;" />
+             </div>
+
+             </div>
+             <div class="scan">
+              <div class="gogame">
+                <img src="images/block1/scangogame.png" alt="扫码进入游戏" />
+              </div>
+              <div class="follow">
+                <img src="images/block1/scanfollow.png" alt="扫码关注我们" />
+              </div>
+             </div>
+            </div>
+          
+      </div>
+    </div> 
+    <div class="block2">
+      <div class="title"><img src="images/block2/title.png" style="position:absolute;left:0;" /></div>
+      <div class="content">
+      <img src="images/block2/middlebanner.png" style="position:absolute;left:345px;top:30px;" />      
+       <img src="images/block2/outsideframe.png" />
+       <div class="firstkill">
+        <img src="images/block2/firstkill/firstkill.png" style="z-index:-1;" />
+        <div class="killtitle">
+        <img src="images/block2/criframe.png" style="z-index:1;" />
+        <font style="position:absolute;left:30px;top:-5px;;font-size:24px;color:#FFF;font-weight:bold;">必杀技一</font>
+        </div>
+        <div class="killname"><font style="font-size:20px;font-weight:800;">拳头够硬</font><br /><font style="font-size:16px;">敢玩就送大红包</font></div>
+        <div class="details">
+          <img src="images/block2/details.png" />
+          <a href="javascript:open();"><font style="position:absolute;left:17px;top:2px;;font-size:12px;">查看详情</font></a>
+        </div>
+        
+         <div class="killright">
+            <div class="firstpic"><a href="javascript:open();"><img src="images/block2/firstkill/icon.png" id="imgg1" style="position:absolute;right:60px;;bottom:20px;"/></a></div>
+         </div>
+       </div>
+       <div class="secondkill">
+          <img src="images/block2/secondkill/secondkill.png" style="z-index:-1" />
+        <div class="killtitle">
+        <img src="images/block2/criframe.png" style="z-index:1;" />
+        <font style="position:absolute;right:20px;top:-5px;;font-size:24px;color:#FFF;font-weight:bold;">必杀技二</font>
+        </div>
+        <div class="killname"><font class="bb" style="font-size:20px;font-weight:800;">造型够炫</font><br /><font style="font-size:16px;">拉风皮肤限量购</font></div>
+        <div class="details">
+          <img src="images/block2/details.png" />
+          <a href="javascript:open();"><font style="position:absolute;left:17px;top:2px;;font-size:12px;">查看详情</font></a>
+        </div>          
+          
+         <div class="killright">
+            <div class="secondpic"><a href="javascript:open();"><img src="images/block2/secondkill/icon.png" id="imgg2" style="position:absolute;bottom:20px;right:200px;"/></a></div>
+         </div>       
+       </div>
+       <div class="threekill" id="hh">
+        <img src="images/block2/threekill/threekill.png" style="z-index:-1;" />
+        <div class="killtitle">
+        <img src="images/block2/criframe.png" style="z-index:1;" />
+        <font style="position:absolute;left:30px;top:-5px;;font-size:24px;color:#FFF;font-weight:bold;">必杀技三</font>
+        </div>
+        <div class="killname"><font style="font-size:20px;font-weight:800;">关系够铁</font><br /><font style="font-size:16px;">呼朋引伴有胡同享</font></div>        <div class="details">
+          <img src="images/block2/details.png" />
+          <a href="javascript:open();"><font style="position:absolute;left:17px;top:2px;;font-size:12px;">查看详情</font></a>
+        </div>         
+         <div class="killright">
+            <div class="threepic"><a href="javascript:open();"><img src="images/block2/threekill/icon.png" id="imgg3" style="position:absolute;bottom:20px;right:60px;" /></a></div>                    
+         </div>       
+       </div>
+       <div class="fourthkill">
+       <img src="images/block2/fourkill/fourkill.png" style="z-index:-1;" />
+        <div class="killtitle">
+        <img src="images/block2/criframe.png" style="z-index:1;" />
+        <font style="position:absolute;right:20px;top:-5px;;font-size:24px;color:#FFF;font-weight:bold;">必杀技二</font>
+        </div>
+        <div class="killname"><font class="bb" style="font-size:20px;font-weight:800;">名头够响</font><br /><font style="font-size:16px;">排名榜前10独享大奖</font></div>
+        <div class="details">
+          <img src="images/block2/details.png" />
+          <a href="javascript:open();"><font style="position:absolute;left:17px;top:2px;;font-size:12px;">查看详情</font></a>
+        </div>                 
+         <div class="killright">
+            <div class="fourthpic"><a href="javascript:open();"><img src="images/block2/fourkill/icon.png" id="imgg4" style="position:absolute;bottom:20px;right:220px;" /></a></div>                     
+         </div>       
+       </div>
+       
+      </div>
+    </div>
+    
+    <div class="block3">
+      <div class="title"><img src="images/block3/title.png" style="position:absolute;left:0;" /></div>
+      <div class="content" id="dd">
+       <img id="block3img1" src="images/block3/UI.png"  />
+       <img id="block3img2" src="images/block3/person.png"  />
+       <img id="block3img3" src="images/block3/title2.png"  />
+      </div>
+      <div class="official">
+        <img src="images/block3/firstgroup.png" class="way1" />
+        <img src="images/block3/WXNumber.png" class="way2" />
+        <img src="images/block3/micro-blog.png" class="way3" />
+        <img src="images/block3/paste.png" class="way4" />
+      </div>
+    </div>
+
+
+</div>
+
+</body>
+<script type="text/javascript">
+        var code;//声明一个变量用于存储生成的验证码
+			changeImg();
+        document.getElementById("code").onclick=changeImg;  
+        function changeImg(){  
+            //alert("换图片");  
+            var arrays=new Array(  
+                '1','2','3','4','5','6','7','8','9','0',  
+                'a','b','c','d','e','f','g','h','i','j',  
+                'k','l','m','n','o','p','q','r','s','t',  
+                'u','v','w','x','y','z',  
+                'A','B','C','D','E','F','G','H','I','J',  
+                'K','L','M','N','O','P','Q','R','S','T',  
+                'U','V','W','X','Y','Z'               
+            );  
+            code='';//重新初始化验证码  
+            //alert(arrays.length);  
+            //随机从数组中获取四个元素组成验证码  
+            for(var i=0;i<4;i++){  
+            //随机获取一个数组的下标  
+                var r=parseInt(Math.random()*arrays.length);  
+                code+=arrays[r];  
+                //alert(arrays[r]);  
+            }  
+            //alert(code);  
+            document.getElementById('code').innerHTML=code;//将验证码写入指定区域  
+        }         
+          
+        //效验验证码(表单被提交时触发)  
+        /*function check(){  
+            //获取用户输入的验证码  
+            var input_code=document.getElementById('vcode').value;  
+            //alert(input_code+"----"+code);  
+            if(input_code.toLowerCase()==code.toLowerCase())  
+            {  
+                //验证码正确(表单提交)  
+                return true;  
+            }  
+            alert("请输入正确的验证码!");  
+            //验证码不正确,表单不允许提交  
+            return false;  
+        }*/
+</script>
+
+</html>

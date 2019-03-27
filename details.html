@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/details.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate3.js"></script>
+<script type="text/javascript" src="js/alpha.js"></script>
+<script>
+$(function(){
+			$("#img1").rotate({
+			  bind:
+			  {
+			    mouseover : function() {
+			    $(this).rotate({animateTo:180})
+			  },
+			  mouseout : function() {
+			    $(this).rotate({animateTo:0})
+			    }
+			  }
+
+			});
+			$("#img2").rotate({
+			  bind:
+			  {
+			    mouseover : function() {
+			    $(this).rotate({animateTo:180})
+			  },
+			  mouseout : function() {
+			    $(this).rotate({animateTo:0})
+			    }
+			  }
+
+			});
+			$("#img3").rotate({
+			  bind:
+			  {
+			    mouseover : function() {
+			    $(this).rotate({animateTo:180})
+			  },
+			  mouseout : function() {
+			    $(this).rotate({animateTo:0})
+			    }
+			  }
+
+			});						
+})
+</script>
+</head>
+
+<body>
+<div id="content">
+   <div class="main">
+   	<ul>
+      <li class="first"><img src="images/details/safari_64x64.png" height="150px" width="150px" id="img1" /></li>
+      <li class="second"><img src="images/details/safari_64x64.png" height="150px" width="150px" id="img2" /></li>
+      <li class="three"><img src="images/details/safari_64x64.png" height="150px" width="150px" id="img3" /></li>
+    </ul>
+      
+   </div>
+</div>
+
+</body>
+</html>

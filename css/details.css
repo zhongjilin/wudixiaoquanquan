@@ -1,0 +1,37 @@
+body{
+	height:2500px;
+	width:100%;
+	background:url(../images/details/back.jpg) ;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+#content .main{
+	width:800px;
+	height:300px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	
+}
+
+#content .main li{
+	position:absolute;
+}
+
+#content .main .first{
+	top:30px;
+	left:50px;
+}
+#content .main .first:hover{
+	background:blue;
+}
+#content .main .second{
+	top:60px;
+	left:250px;
+}
+#content .main .three{
+	top:30px;
+	left:450px;
+}
+	
+
